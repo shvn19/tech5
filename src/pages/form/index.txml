@@ -319,7 +319,8 @@
         >Submit</button>
         <button form-type="reset" type="outline" style="
         border-bottom-right-radius: 4px;
-        border-top-right-radius: 4px;">Reset</button>
+        border-top-right-radius: 4px;"
+        onTap="onTapReset">Reset</button>
       </view>
     </form>
   </scroll-view>

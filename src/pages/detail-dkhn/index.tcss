@@ -71,3 +71,17 @@
 .text {
   margin-left: 12px;
 }
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 16px 16px 16px;
+  padding: 16px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: #EBEBF0;
+}
+
+/* .list-item-last {
+  border-bottom-width: 0px;
+}  */

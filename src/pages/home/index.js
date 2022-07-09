@@ -4,21 +4,6 @@ Page({
     value: '',
     populars: populars,
   },
-  makeRequest() {
-    this.setData({ loading: true });
-    my.request({
-      url: 'https://bb9f-42-115-65-149.ap.ngrok.io',
-      method: 'GET',
-      headers: {
-        "Content-Type": "application/json"
-      },
-      dataType: "json",
-      success: (response) => {
-        console.log(", response", response);
-        this.setData({ response, loading: false });
-      }
-    });
-  },
   handleChangeInput(e) {
     this.setData({
       value: e.detail.value,

@@ -106,7 +106,12 @@ const populars = [
     color: "#3292a8",
   },
   {
-    name: "Tờ khai đăng ký kết hôn",
+    name: "Tờ khai xác nhận tình trạng hôn nhân",
+    path: "",
+    color: "#3292a8",
+  },
+  {
+    name: "Tờ khai đăng ký tạm trú, tạm vắng",
     path: "",
     color: "#3292a8",
   },

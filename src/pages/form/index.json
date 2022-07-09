@@ -1,5 +1,5 @@
 {
-  "defaultTitle": "form",
+  "defaultTitle": "Điền biểu mẫu xác nhận tình trạng hôn nhân",
   "usingComponents": {
     "block-header": "components/block-header/index",
     "list-item": "@tiki.vn/tini-ui/es/list/list-item/index",
