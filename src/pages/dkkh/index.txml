@@ -60,6 +60,7 @@
         <view>· Địa chỉ thường trú, không phải địa chỉ tạm trú</view>
         <view style="font-style: italic;">Ví dụ:</view>
         <view style="font-style: italic;">- Số 20, Trần Bình, phường Mai Dịch, quận Cầu Giấy, thành phố Hà nội</view>
+        <view style="font-style: italic;">- Số 20, Trần Bình, phường Mai Dịch, quận Cầu Giấy, thành phố Hà nội</view>
         <view>
           <view>· Trường hợp người nước ngoài thì phải đi kèm bản chính hộ chiếu.</view>
           <view>··· Trường hợp người nước ngoài không có hộ chiếu để xuất trình thì có thể xuất trình giấy tờ đi lại
@@ -88,6 +89,38 @@
       </view>
     </fi-button>
 
+    <fi-button title="Lần kết hôn thứ mấy" top="67.5%" left="35%">
+      <view>
+        <view>· Lần kết hôn thứ bao nhiêu.</view>
+        <view>· Nếu lần đầu ghi số 1, nếu đã kết hôn và tái hôn thì ghi số 2</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Nơi viết và ngày tháng năm viết đơn" top="82%" left="50%">
+      <view>
+        <view>· Điền nơi viết đơn và ngày tháng năm viết đơn </view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Thành phố Hồ Chí Minh, ngày 09 tháng 07 năm 2022</view>
+        <view style="font-style: italic;">- Đồng Nai, ngày 09 tháng 07, năm 2022</view>
+        <view>· Đơn vị hành chính cấp tỉnh, thành phố trực thuộc Trung ương </view>
+        <view>· Được viết tăt chữ Thành phố thành "TP. " </view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Chữ ký, Họ tên đệm tên của 2 bên" top="95%" left="50%">
+      <view>
+        <view>· Chữ ký hợp lệ của 2 bên muốn đăng ký kết hôn và </view>
+        <view>· Họ, tên đệm và tên giống giấy tờ tùy thân đi như Căn cước công dân, Hộ chiếu </view>
+      </view>
+    </fi-button>
     <image style="width: 100%; " mode="widthFix" src="/assets/images/dang-ky-ket-hon-online.png" />
   </scroll-view>
+  <view class="end-page-block">
+    <view>
+      <tu-button class="inline-block" style="margin: 10px;" shape="pill" size="medium" type="outline">Đến trang điền Form</tu-button>
+      <tu-button class="inline-block" style="margin: 10px;" shape="pill" size="medium" type="outline">Quay lại trang trước</tu-button>
+    </view>
+    
+  </view>
+  
 </view>
