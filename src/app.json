@@ -1,10 +1,9 @@
 {
   "pages": [
-    "pages/form/index"
     "pages/home/index",
+    "pages/form/index",
     "pages/search/index",
     "pages/dkkh/index"
-
   ],
   "window": {
     "defaultTitle": "",
