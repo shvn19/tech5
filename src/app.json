@@ -1,12 +1,12 @@
 {
   "pages": [
     "pages/home/index",
-    "pages/form/index",
     "pages/gxn/index",
     "pages/dkkh/index",
+    "pages/form/index",
     "pages/search/index",
-    "pages/detail-dkhn/index"
-  ],
+    "pages/detail1/index"
+    ],
   "window": {
     "defaultTitle": "Tech5",
     "backgroundColor": "#fff",
