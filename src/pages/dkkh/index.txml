@@ -1,0 +1,93 @@
+<view class="flex flex-col items-center">
+  <scroll-view scroll-x="true" scroll-y="true" style="height: 100%; border: 1px red solid; position: relative;">
+
+    <fi-button top="17%" left="13%" title="Ảnh chồng">
+      <view>
+        <view>1. Ảnh của chồng</view>
+        <view>2. Ảnh 4x6 </view>
+        <view>3. Ảnh phải được chụp trong thời gian 6 tháng gần đây nhất</view>
+        <view>4. Ảnh nền phông xanh / trắng</view>
+      </view>
+    </fi-button>
+
+    <fi-button top="17%" left="89%" title="Ảnh vợ">
+      <view>
+        <view>1. Ảnh của vợ</view>
+        <view>2. Ảnh 4x6</view>
+        <view>3. Ảnh phải được chụp trong thời gian 6 tháng gần đây nhất</view>
+        <view>4. Ảnh nền phông xanh / trắng</view>
+      </view>
+    </fi-button>
+
+    <fi-button top="20.5%" left="75%" title="Cơ quan hành chính cấp quận, huyện">
+      <view>
+        <view style="">1. Cơ quan cấp quận, huyện có thêm cả cấp thành phố, tỉnh</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- UBND Quận 9, thành phố Hồ Chí Minh</view>
+        <view style="font-style: italic;">- UBND thành phố Biên Hòa, tỉnh Đồng Nai</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Điền tên đầy đủ" top="32.5%" left="48%">
+      <view>
+        <view>Điền đầy đủ Họ, Tên đệm, Tên</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Nguyễn Nhật Linh</view>
+        <view style="font-style: italic;">- David Nguyễn</view>
+        <view>Trường hợp không có tên đệm thì có thể bỏ tên đệm:</view>
+        <view style="font-style: italic;">- Ví dụ: Hoàng Phong</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Ngày tháng năm sinh" top="37%" left="48%">
+      <view>
+        <view>Điền ngày tháng năm sinh giống với CMND</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Nguyễn Nhật Linh</view>
+        <view>
+          <text>
+            Trường hợp ngày sinh có thay đổi thì điền vào ngày sinh mới cập nhật, hoặc tham khảo
+          </text>
+            <tu-button class="inline" onTap="dummyFunction" iconName="arrow_right" shape="circle" type="outline"
+              size="small" style="margin-left: 15px;"></tu-button>
+          
+        </view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Nơi cư trú" top="49.5%" left="20%">
+      <view>
+        <view>· Địa chỉ thường trú, không phải địa chỉ tạm trú</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Số 20, Trần Bình, phường Mai Dịch, quận Cầu Giấy, thành phố Hà nội</view>
+        <view>
+          <view>· Trường hợp người nước ngoài thì phải đi kèm bản chính hộ chiếu.</view>
+          <view>··· Trường hợp người nước ngoài không có hộ chiếu để xuất trình thì có thể xuất trình giấy tờ đi lại
+            quốc tế hoặc thẻ cư trú.</view>
+          <view>··· Giấy tờ chứng minh nơi cư trú để xác định thẩm quyền đăng ký kết hôn</view>
+        </view>
+      </view>
+    </fi-button>
+
+    <fi-button title="CMND, Hộ chiếu" top="58%" left="23%">
+      <view>
+        <view>· Căn cước công dân hoặc Hộ chiếu (người nước ngoài)</view>
+        <view>
+          <view>· Trường hợp người nước ngoài thì phải đi kèm bản chính hộ chiếu.</view>
+          <view>··· Trường hợp người nước ngoài không có hộ chiếu để xuất trình thì có thể xuất trình giấy tờ đi lại
+            quốc tế hoặc thẻ cư trú.</view>
+          <view>··· Giấy tờ chứng minh nơi cư trú để xác định thẩm quyền đăng ký kết hôn</view>
+        </view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Lần kết hôn thứ mấy" top="67.5%" left="35%">
+      <view>
+        <view>· Lần kết hôn thứ bao nhiêu.</view>
+        <view>· Nếu lần đầu ghi số 1, nếu đã kết hôn và tái hôn thì ghi số 2</view>
+      </view>
+    </fi-button>
+
+    <image style="width: 100%; " mode="widthFix" src="/assets/images/dang-ky-ket-hon-online.png" />
+  </scroll-view>
+</view>
