@@ -1,7 +1,6 @@
 {
   "pages": [
-    "pages/home/index",
-    "pages/search/index"
+    "pages/form/index"
   ],
   "window": {
     "defaultTitle": "",

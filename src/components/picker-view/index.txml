@@ -1,0 +1,23 @@
+<view>
+  <!-- <view class="block-content"> -->
+    <picker-view 
+      value="{{value}}" 
+      onChange="onChange">
+      <picker-view-column>
+        <block tiki:for="{{days}}">
+          <view> {{item}} </view>
+        </block>
+      </picker-view-column>
+      <picker-view-column>
+        <block tiki:for="{{months}}">
+          <view> {{item}} </view>
+        </block>
+      </picker-view-column>
+      <picker-view-column >
+        <block tiki:for="{{years}}">
+          <view> {{item}} </view>
+        </block>
+      </picker-view-column>
+    </picker-view>
+  <!-- </view> -->
+</view>

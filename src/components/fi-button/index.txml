@@ -1,0 +1,8 @@
+<tu-button onTap="onTap" iconName="info" shape="borderless" type="ghost" size="small" style="position: absolute; top: {{top}}; left: {{left}}; width: 40px;" />
+<bottom-sheet buttonTitle="OK" title="{{title}}" show="{{showBottomSheet}}" onClose="onClose" mask="true"
+  buttonCls="hidden">
+<slot name="header" />  
+<slot name="content" />
+<slot><view>default slot</view></slot>
+<slot name="footer" />
+</bottom-sheet>

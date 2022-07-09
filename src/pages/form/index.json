@@ -1,0 +1,13 @@
+{
+  "defaultTitle": "form",
+  "usingComponents": {
+    "block-header": "components/block-header/index",
+    "picker-view": "components/picker-view/index",
+    "list-item": "@tiki.vn/tini-ui/es/list/list-item/index",
+    "textfield": "@tiki.vn/tini-ui/es/textfield/index",
+    "tu-button": "@tiki.vn/tini-ui/es/tu-button/index",
+    "bottom-sheet": "@tiki.vn/tini-ui/es/bottom-sheet/index",
+    "dropdown": "@tiki.vn/tini-ui/es/dropdown/index",
+    "fi-button": "components/fi-button/index"
+  }
+}
