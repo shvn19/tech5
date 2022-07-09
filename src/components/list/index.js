@@ -2,6 +2,7 @@ Component({
   data: {},
   methods: {
     handleOnTap(e) {
+      console.log(e.target.dataset.url);
       my.navigateTo({url : e.target.dataset.url});
     }
   }

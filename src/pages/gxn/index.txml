@@ -1,0 +1,151 @@
+<view class="flex flex-col items-center">
+  <scroll-view scroll-x="true" scroll-y="true" style="height: 100%; border: 1px red solid; position: relative;">
+   
+    <fi-button top="16.4%" left="72%" title="Cơ quan hành chính cấp quận, huyện">
+      <view>
+        <view style="">1. Cơ quan cấp quận, huyện có thêm cả cấp thành phố, tỉnh</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- UBND Quận 9, thành phố Hồ Chí Minh</view>
+        <view style="font-style: italic;">- UBND thành phố Biên Hòa, tỉnh Đồng Nai</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Điền tên đầy đủ" top="19%" left="53%">
+      <view>
+        <view>Điền đầy đủ Họ, Tên đệm, Tên</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Nguyễn Nhật Linh</view>
+        <view style="font-style: italic;">- David Nguyễn</view>
+        <view>Trường hợp không có tên đệm thì có thể bỏ tên đệm:</view>
+        <view style="font-style: italic;">- Ví dụ: Hoàng Phong</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Nơi cư trú" top="24.6%" left="43%">
+      <view>
+        <view>· Địa chỉ thường trú, không phải địa chỉ tạm trú</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Số 20, Trần Bình, phường Mai Dịch, quận Cầu Giấy, thành phố Hà nội</view>
+        <view style="font-style: italic;">- Số 20, Trần Bình, phường Mai Dịch, quận Cầu Giấy, thành phố Hà nội</view>
+        <view>
+          <view>· Trường hợp người nước ngoài thì phải đi kèm bản chính hộ chiếu.</view>
+          <view>··· Trường hợp người nước ngoài không có hộ chiếu để xuất trình thì có thể xuất trình giấy tờ đi lại
+            quốc tế hoặc thẻ cư trú.</view>
+          <view>··· Giấy tờ chứng minh nơi cư trú để xác định thẩm quyền đăng ký kết hôn</view>
+        </view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Quan hệ với người được cấp Giấy xác nhận" top="27.6%" left="71%">
+      <view>
+        <view>· Nếu làm cho chính mình, điền vào "Bản thân"</view>
+        <view>· Hoặc ghi rõ mối quan hệ</view>
+        <view style="font-style: italic;">Ví dụ: Bố/Mẹ/Anh/Chị</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Ngày tháng năm sinh" top="38.8%" left="36%">
+      <view>
+        <view>Điền ngày tháng năm sinh giống với CMND</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- 25/09/1999</view>
+        <view>
+          <text>
+            Trường hợp ngày sinh có thay đổi thì điền vào ngày sinh mới cập nhật, hoặc tham khảo
+          </text>
+            <tu-button class="inline" onTap="dummyFunction" iconName="arrow_right" shape="circle" type="outline"
+              size="small" style="margin-left: 15px;"></tu-button>
+          
+        </view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Nơi sinh" top="41.8%" left="45%">
+      <view>
+        <view>Ghi rõ tên bệnh viện và địa chỉ của bệnh viện</view>
+        <view style="font-style: italic;">Ví dụ: </view>
+        <view style="font-style: italic;">- Bệnh viện phụ sản Hùng Vương</view>
+        <view style="font-style: italic;">- xã Đức Chánh, huyện Mộ Đức, tỉnh Quảng Ngãi</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="CMND, Hộ chiếu" top="47.5%" left="73.5%">
+      <view>
+        <view>· Căn cước công dân hoặc Hộ chiếu (người nước ngoài)</view>
+        <view>
+          <view>· Trường hợp người nước ngoài thì phải đi kèm bản chính hộ chiếu.</view>
+          <view>··· Trường hợp người nước ngoài không có hộ chiếu để xuất trình thì có thể xuất trình giấy tờ đi lại
+            quốc tế hoặc thẻ cư trú.</view>
+          <view>··· Giấy tờ chứng minh nơi cư trú để xác định thẩm quyền đăng ký kết hôn</view>
+        </view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Nghề nghiệp" top="53.2%" left="24%">
+      <view>
+        <view>Ghi rõ nghề nghiệp hiện tại</view>
+        <view style="font-style: italic;">Ví dụ: Công nhân/Nông dân/Lao động tự do</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Trong thời gian cư trú" top="58.2%" left="24.5%">
+      <view>
+        <view>Ghi rõ địa chỉ, thời gian từ lúc nào đến hiện tại</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Địa chỉ: Thôn 1, xã A, huyện B, tỉnh C</view>
+        <view style="font-style: italic;">- Thời gian: từ ngày 13 tháng 4 năm 2008 đến hiện tại (ngày 09 tháng 4 năm 2019)</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Tình trạng hôn nhân" top="60.8%" left="50.5%">
+      <view>
+        <view>Ghi rõ tình trạng hôn nhân ở thời điểm hiện tại</view>
+        <view >Trường hợp 1: Bạn là công dân Việt Nam cư trú ở trong nước</view>
+        <view style="font-style: italic;">Ví dụ: đang có vợ hoặc có chồng; hoặc chưa đăng ký kết hôn với ai; hoặc đã đăng ký kết hôn/đã có vợ hoặc chồng, nhưng đã ly hôn hoặc người kia đã chết</view>
+        <view >Trường hợp 2: Bạn là công dân Việt Nam đang cư trú ở nước ngoài</view>
+        <view style="font-style: italic;">Ví dụ: Trong thời gian từ ngày…tháng….năm….đến ngày….tháng…..năm….chưa đăng ký kết hôn với ai; hoặc hiện tại đang có vợ/chồng là bà/ông… (Giấy chứng nhận kết hôn số …, do … cấp ngày…tháng…năm)</view>
+        <view >Trường hợp 3: Bạn là công dân Việt Nam cư trú ở nước ngoài có yêu cầu xác nhận tình trạng hôn nhân trong thời gian cư trú tại Việt Nam trước khi xuất cảnh</view>
+        <view style="font-style: italic;">Ví dụ: xác nhận tình trạng hôn nhân tại nơi thường trú trước đây thì khai về tình trạng hôn nhân của mình trong thời gian đã thường trú tại nơi đó (Ví dụ: Không đăng ký kết hôn với ai trong thời gian cư trú tại ............................................, từ ngày...... tháng ..... năm ......... đến ngày ........ tháng ....... năm ........)</view>
+        <view >Trường hợp 4: Bạn là người đang có vợ/chồng yêu cầu xác nhận tình trạng hôn nhân trong thời gian trước khi đăng ký kết hôn</view>
+        <view style="font-style: italic;">Ví dụ: trong thời gian cư trú tại CHLB Đức từ ngày ....... tháng ..... năm ....... đến ngày ........ tháng ....... năm ........ không đăng ký kết hôn với ai tại Đại sứ quán Việt Nam tại CHLB Đức</view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Mục đích sử dụng Giấy xác nhận tình trạng hôn nhân" top="67.9%" left="17.5%">
+      <view>
+        <view>Trường hợp sử dụng Giấy xác nhận tình trạng hôn nhân để kết hôn, thì phải ghi rõ kết hôn với ai (họ, chữ đệm, tên; ngày, tháng, năm sinh; quốc tịch; giấy tờ tùy thân; nơi cư trú); nơi dự định đăng ký kết hôn</view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Mục đích: Để đăng ký kết hôn với anh Nguyễn Hữu K, sinh năm 1988, </view>
+        <view style="font-style: italic;">- Căn cước công dân số: 038123456xxx, tại UBND phường A, quận B, thành phố Hà Nội</view>
+        <view>· Đơn vị hành chính cấp tỉnh, thành phố trực thuộc Trung ương </view>
+        <view>· Được viết tăt chữ Thành phố thành "TP. " </view>
+      </view>
+    </fi-button>
+    <fi-button title="Nơi viết và ngày tháng năm viết đơn" top="75.5%" left="88.5%">
+      <view>
+        <view>· Điền nơi viết đơn và ngày tháng năm viết đơn </view>
+        <view style="font-style: italic;">Ví dụ:</view>
+        <view style="font-style: italic;">- Thành phố Hồ Chí Minh, ngày 09 tháng 07 năm 2022</view>
+        <view style="font-style: italic;">- Đồng Nai, ngày 09 tháng 07, năm 2022</view>
+        <view>· Đơn vị hành chính cấp tỉnh, thành phố trực thuộc Trung ương </view>
+        <view>· Được viết tăt chữ Thành phố thành "TP. " </view>
+      </view>
+    </fi-button>
+
+    <fi-button title="Chữ ký, Họ tên đệm tên của 2 bên" top="81.4%" left="79.5%">
+      <view>
+        <view>· Chữ ký hợp lệ của 2 bên muốn đăng ký kết hôn và </view>
+        <view>· Họ, tên đệm và tên giống giấy tờ tùy thân đi như Căn cước công dân, Hộ chiếu </view>
+      </view>
+    </fi-button>
+    <image style="width: 100%; " mode="widthFix" src="/assets/images/XacNhanTinhTrangHonNhan.jpg" />
+  </scroll-view>
+  <view class="end-page-block">
+    <view>
+      <tu-button class="inline-block" style="margin: 10px;" shape="pill" size="medium" type="outline">Đến trang điền Form</tu-button>
+      <tu-button class="inline-block" style="margin: 10px;" shape="pill" size="medium" type="outline">Quay lại trang trước</tu-button>
+    </view>
+    
+  </view>
+  
+</view>

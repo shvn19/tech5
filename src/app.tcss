@@ -1,3 +1,5 @@
+@import '@tiki.vn/tini-style/es/index.tcss';
+
 *{
   margin: 0px;
   padding: 0px;

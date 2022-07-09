@@ -3,6 +3,7 @@
     "pages/detail1/index",
     "pages/home/index",
     "pages/search/index"
+    "pages/gxn/index"
   ],
   "window": {
     "defaultTitle": "",

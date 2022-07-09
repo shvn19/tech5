@@ -151,25 +151,30 @@ const questions = [
   {
     id: "qs3",
     question: "Bạn là cư dân Việt Nam phải không?",
-    labelYes: "phải",
-    labelNo: "không",
-  },
+    labelYes: "phải"
+  }
 ];
+
 
 const populars = [
   {
     name: "Đăng kí hôn nhân",
-    path: "page/dkhn/index",
+    path: "pages/dkhn/index",
     color: "#3255a8",
   },
   {
     name: "Đăng kí thường trú",
-    path: "page/dkhn/index",
+    path: "pages/dkhn/index",
     color: "#3273a8",
   },
   {
     name: "Thủ tục hành chính đất đai",
-    path: "page/dkhn/index",
+    path: "pages/dkhn/index",
+    color: "#3292a8",
+  },
+  {
+    name: "Tờ khai đăng ký kết hôn",
+    path: "pages/dkkh/index",
     color: "#3292a8",
   },
 ];

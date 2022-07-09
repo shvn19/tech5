@@ -1,0 +1,9 @@
+{
+  "defaultTitle": "Form Image",
+  "usingComponents": {
+    "tu-button": "@tiki.vn/tini-ui/es/tu-button/index",
+    "bottom-sheet": "@tiki.vn/tini-ui/es/bottom-sheet/index",
+    "popup": "@tiki.vn/tini-ui/es/popup/index",
+    "fi-button": "/components/fi-button/index"
+  }
+}
