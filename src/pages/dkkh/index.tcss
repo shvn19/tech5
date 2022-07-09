@@ -1,0 +1,45 @@
+.avatar {
+  width: 72px;
+  height: 72px;
+}
+
+.my-account {
+  height: 100vh;
+  padding-top: calc(var(--safe-area-inset-top) + 16px);
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.version {
+  flex: 1;
+  justify-content: flex-end;
+  padding-bottom: 8px;
+}
+
+.image-form {
+  width: 100vw;
+  /* height: auto; */
+}
+
+.fi-button-1 {
+  position: absolute;
+  top: 17%;
+  left: 13%;
+}
+
+.fi-button-2 {
+  position: absolute;
+  top: 17%;
+  left: 87%;
+}
+
+.fi-button-3 {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+}
+
+.hidden {
+  display: none;
+}
