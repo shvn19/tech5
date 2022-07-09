@@ -138,7 +138,7 @@
         <view>· Họ, tên đệm và tên giống giấy tờ tùy thân đi như Căn cước công dân, Hộ chiếu </view>
       </view>
     </fi-button>
-    <image style="width: 100%; " mode="widthFix" src="/assets/images/XacNhanTinhTrangHonNhan.jpg" />
+    <image style="width: fit-content; height:fit-content" mode="widthFix" src="/assets/images/XacNhanTinhTrangHonNhan.jpg" />
   </scroll-view>
   <view class="end-page-block">
     <view>
