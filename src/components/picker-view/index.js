@@ -15,4 +15,7 @@ for (let index = 1; index <= 31; index++) {
 
 Component({
   data: {days, months, years},
+  props() {
+    onchange
+  }
 });

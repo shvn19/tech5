@@ -68,6 +68,9 @@ button {
 .list-button > * {
   margin-bottom: var(--space-stack-medium);
 }
+.gender scroll-view {
+  width: 100%;
+}
 
 .list-item-prefix {
   display: flex;
@@ -88,4 +91,12 @@ button {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-base);
   line-height: var(--font-height-base);
+}
+
+.hidden {
+  display: none;
+}
+
+.width-full {
+  width: 100%;
 }

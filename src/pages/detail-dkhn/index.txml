@@ -1,0 +1,31 @@
+
+<view style="padding-left: 10px; margin-top: 20px;">
+  <text style="font-size: 14px;">Bạn và người cùng đăng kí thuộc trường hợp nào dưới đây?</text>
+  <radio-group class="radio-group" onChange="onChange">
+    <view class="radio" tiki:for="{{items}}" key="radio-{{index}}">
+      <radio value="{{item.value}}" checked="{{item.checked}}" />
+      <text class="text">{{item.name}}</text>
+    </view>
+  </radio-group>
+</view>
+
+
+<!-- <view class="list-item">
+  <view class="list-item-label">
+    <dropdown value="{{selected}}" items="{{items1}}" labelText="Bạn thuộc trường hợp nào dưới đây?"
+      onSelect="onSelect" />
+  </view>
+</view> -->
+
+<view style="margin-top: 20px" />
+<block tiki:if="{{selected === '0'}}">
+  <block tiki:for="{{ detail0 }}">
+    <detail-dropdown id="{{index}}" title="{{ item.title }}" content="{{ item.content }}" />
+  </block>
+</block>
+
+<block tiki:if="{{selected === '1' }}">
+  <block tiki:for="{{ detail1 }}">
+    <detail-dropdown id="{{index}}" title="{{ item.title }}" content="{{ item.content }}" />
+  </block>
+</block>

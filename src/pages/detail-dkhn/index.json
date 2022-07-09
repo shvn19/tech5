@@ -2,5 +2,6 @@
   "usingComponents": {
     "dropdown": "@tiki.vn/tini-ui/es/dropdown/index",
     "detail-dropdown": "components/detail-dropdown/index"
-  }
+  },
+  "defaultTitle": "Quy trình đăng kí kết hôn"
 }

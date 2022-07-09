@@ -1,45 +1,248 @@
-<view class="container" >
+<view class="container">
   <scroll-view scroll-y="true" style="height:84vh;">
     <form onSubmit="onSubmit" onReset="onReset">
       <view class="block">
         <label>
           <text class="header">Thông tin người yêu cầu</text>
-          <input name="input" placeholder="Họ, chữ đệm, tên" />
+          <input name="name" placeholder="Họ, tên đệm, tên" onInput="onInputName" />
         </label>
         <label style="position: relative;">
           <text class="header">Nơi cư trú</text>
           <fi-button title="Nơi cư trú" left="15%">
             <view>
-              <text>Trường hợp công dân Việt Nam cư trú trong nước thì ghi theo nơi đăng ký thường trú, nếu không có nơi đăng ký thường trú thì ghi theo nơi đăng ký tạm trú.\nTrường hợp công dân Việt Nam cư trú ở nước ngoài thì ghi theo nơi thường trú hoặc tạm trú ở nước ngoài",</text>
+              <view>Trường hợp công dân Việt Nam cư trú trong nước thì ghi theo nơi đăng ký thường trú, nếu không có nơi
+                đăng ký thường trú thì ghi theo nơi đăng ký tạm trú.\nTrường hợp công dân Việt Nam cư trú ở nước ngoài
+                thì ghi theo nơi thường trú hoặc tạm trú ở nước ngoài",</view>
             </view>
           </fi-button>
-          <button class="button-full" onTap="onAddress">Gợi ý</button>
-          <input name="input" placeholder="Số nhà, tên đường, xã, huyện, tỉnh" />
+          <!-- <button class="button-full" onTap="onAddress">Gợi ý</button> -->
+          <input name="address" placeholder="Số nhà, tên đường, xã, huyện, tỉnh" onInput="onInputAddress" />
         </label>
         <label style="position: relative;">
           <text class="header">Giấy tờ tùy thân</text>
           <fi-button title="Giấy tờ tùy thân" left="25%">
             <view>
-              <view>Ghi thông tin về giấy tờ tùy thân như: hộ chiếu, chứng minh nhân dân hoặc giấy tờ hợp lệ thay thế (ví dụ: Chứng minh nhân dân số 001089123 do Công an thành phố Hà Nội cấp ngày 20/10/2004)</view>
+              <view>Ghi thông tin về giấy tờ tùy thân như: hộ chiếu, chứng minh nhân dân hoặc giấy tờ hợp lệ thay thế
+                (ví dụ: Chứng minh nhân dân số 001089123 do Công an thành phố Hà Nội cấp ngày 20/10/2004)</view>
             </view>
           </fi-button>
-          <textarea show-count="{{false}}" name="input" placeholder="Ví dụ: Chứng minh nhân dân số 1212365055 do công an thành phố Hà Nội cấp ngày 11/08/2008" />
+          <textarea show-count="{{false}}" name="identity"
+            placeholder="Ví dụ: Chứng minh nhân dân số 1212365055 do công an thành phố Hà Nội cấp ngày 11/08/2008"
+            onInput="onInputIdentity" />
         </label>
         <label>
           <text class="header">Quan hệ với người được cấp Giấy xác nhận tình trạng hôn nhân</text>
-          <input name="input" placeholder="Bổ ruột, Chồng, Con, Bố chồng" />
+          <input name="relation" placeholder="Bản thân, Bổ ruột, Chồng, Con, Bố chồng" onInput="onInputRelation" />
         </label>
       </view>
       <view class="block">
         <label>
           <text class="header">Đề nghị cấp Giấy xác nhận tình trạng hôn nhân cho người có tên dưới đây</text>
-          <input name="input" placeholder="Họ, chữ đệm, tên" />
+          <input name="name2" placeholder="Họ, chữ đệm, tên" onInput="onInputName2" />
         </label>
 
         <!-- Nhập ngày tháng năm sinh -->
         <label>
           <template name="bottom-sheet-picker">
-            <picker-view class="bday"/>
+            <!-- <picker-view class="bday" onChange="onChangeTest" /> -->
+
+            <view>
+              <!-- <view class="block-content">
+                <picker-view value="{{value}}" onChange="onChangeDay">
+                  <picker-view-column>
+                    <block tiki:for="{{days}}">
+                      <view> {{item}} </view>
+                    </block>
+                  </picker-view-column>
+                  <picker-view-column>
+                    <block tiki:for="{{months}}">
+                      <view> {{item}} </view>
+                    </block>
+                  </picker-view-column>
+                  <picker-view-column>
+                    <block tiki:for="{{years}}">
+                      <view> {{item}} </view>
+                    </block>
+                  </picker-view-column>
+                </picker-view>
+              </view> -->
+
+              <picker-view value="{{value}}" onChange="onChangeDay">
+                <picker-view-column>
+                  <view>Ngày 1</view>
+                  <view>Ngày 2</view>
+                  <view>Ngày 3</view>
+                  <view>Ngày 4</view>
+                  <view>Ngày 5</view>
+                  <view>Ngày 6</view>
+                  <view>Ngày 7</view>
+                  <view>Ngày 8</view>
+                  <view>Ngày 9</view>
+                  <view>Ngày 10</view>
+                  <view>Ngày 11</view>
+                  <view>Ngày 12</view>
+                  <view>Ngày 13</view>
+                  <view>Ngày 14</view>
+                  <view>Ngày 15</view>
+                  <view>Ngày 16</view>
+                  <view>Ngày 17</view>
+                  <view>Ngày 18</view>
+                  <view>Ngày 19</view>
+                  <view>Ngày 20</view>
+                  <view>Ngày 21</view>
+                  <view>Ngày 22</view>
+                  <view>Ngày 23</view>
+                  <view>Ngày 24</view>
+                  <view>Ngày 25</view>
+                  <view>Ngày 26</view>
+                  <view>Ngày 27</view>
+                  <view>Ngày 28</view>
+                  <view>Ngày 29</view>
+                  <view>Ngày 30</view>
+                  <view>Ngày 31</view>
+                </picker-view-column>
+                <picker-view-column>
+                  <view>Tháng 1</view>
+                  <view>Tháng 2</view>
+                  <view>Tháng 3</view>
+                  <view>Tháng 4</view>
+                  <view>Tháng 5</view>
+                  <view>Tháng 6</view>
+                  <view>Tháng 7</view>
+                  <view>Tháng 8</view>
+                  <view>Tháng 9</view>
+                  <view>Tháng 10</view>
+                  <view>Tháng 11</view>
+                  <view>Tháng 12</view>
+                </picker-view-column>
+                <picker-view-column>
+                  <view>Năm 1900</view>
+                  <view>Năm 1901</view>
+                  <view>Năm 1902</view>
+                  <view>Năm 1903</view>
+                  <view>Năm 1904</view>
+                  <view>Năm 1905</view>
+                  <view>Năm 1906</view>
+                  <view>Năm 1907</view>
+                  <view>Năm 1908</view>
+                  <view>Năm 1909</view>
+                  <view>Năm 1910</view>
+                  <view>Năm 1911</view>
+                  <view>Năm 1912</view>
+                  <view>Năm 1913</view>
+                  <view>Năm 1914</view>
+                  <view>Năm 1915</view>
+                  <view>Năm 1916</view>
+                  <view>Năm 1917</view>
+                  <view>Năm 1918</view>
+                  <view>Năm 1919</view>
+                  <view>Năm 1920</view>
+                  <view>Năm 1921</view>
+                  <view>Năm 1922</view>
+                  <view>Năm 1923</view>
+                  <view>Năm 1924</view>
+                  <view>Năm 1925</view>
+                  <view>Năm 1926</view>
+                  <view>Năm 1927</view>
+                  <view>Năm 1928</view>
+                  <view>Năm 1929</view>
+                  <view>Năm 1930</view>
+                  <view>Năm 1931</view>
+                  <view>Năm 1932</view>
+                  <view>Năm 1933</view>
+                  <view>Năm 1934</view>
+                  <view>Năm 1935</view>
+                  <view>Năm 1936</view>
+                  <view>Năm 1937</view>
+                  <view>Năm 1938</view>
+                  <view>Năm 1939</view>
+                  <view>Năm 1940</view>
+                  <view>Năm 1941</view>
+                  <view>Năm 1942</view>
+                  <view>Năm 1943</view>
+                  <view>Năm 1944</view>
+                  <view>Năm 1945</view>
+                  <view>Năm 1946</view>
+                  <view>Năm 1947</view>
+                  <view>Năm 1948</view>
+                  <view>Năm 1949</view>
+                  <view>Năm 1950</view>
+                  <view>Năm 1951</view>
+                  <view>Năm 1952</view>
+                  <view>Năm 1953</view>
+                  <view>Năm 1954</view>
+                  <view>Năm 1955</view>
+                  <view>Năm 1956</view>
+                  <view>Năm 1957</view>
+                  <view>Năm 1958</view>
+                  <view>Năm 1959</view>
+                  <view>Năm 1960</view>
+                  <view>Năm 1961</view>
+                  <view>Năm 1962</view>
+                  <view>Năm 1963</view>
+                  <view>Năm 1964</view>
+                  <view>Năm 1965</view>
+                  <view>Năm 1966</view>
+                  <view>Năm 1967</view>
+                  <view>Năm 1968</view>
+                  <view>Năm 1969</view>
+                  <view>Năm 1970</view>
+                  <view>Năm 1971</view>
+                  <view>Năm 1972</view>
+                  <view>Năm 1973</view>
+                  <view>Năm 1974</view>
+                  <view>Năm 1975</view>
+                  <view>Năm 1976</view>
+                  <view>Năm 1977</view>
+                  <view>Năm 1978</view>
+                  <view>Năm 1979</view>
+                  <view>Năm 1980</view>
+                  <view>Năm 1981</view>
+                  <view>Năm 1982</view>
+                  <view>Năm 1983</view>
+                  <view>Năm 1984</view>
+                  <view>Năm 1985</view>
+                  <view>Năm 1986</view>
+                  <view>Năm 1987</view>
+                  <view>Năm 1988</view>
+                  <view>Năm 1989</view>
+                  <view>Năm 1990</view>
+                  <view>Năm 1991</view>
+                  <view>Năm 1992</view>
+                  <view>Năm 1993</view>
+                  <view>Năm 1994</view>
+                  <view>Năm 1995</view>
+                  <view>Năm 1996</view>
+                  <view>Năm 1997</view>
+                  <view>Năm 1998</view>
+                  <view>Năm 1999</view>
+                  <view>Năm 2000</view>
+                  <view>Năm 2001</view>
+                  <view>Năm 2002</view>
+                  <view>Năm 2003</view>
+                  <view>Năm 2004</view>
+                  <view>Năm 2005</view>
+                  <view>Năm 2006</view>
+                  <view>Năm 2007</view>
+                  <view>Năm 2008</view>
+                  <view>Năm 2009</view>
+                  <view>Năm 2010</view>
+                  <view>Năm 2011</view>
+                  <view>Năm 2012</view>
+                  <view>Năm 2013</view>
+                  <view>Năm 2014</view>
+                  <view>Năm 2015</view>
+                  <view>Năm 2016</view>
+                  <view>Năm 2017</view>
+                  <view>Năm 2018</view>
+                  <view>Năm 2019</view>
+                  <view>Năm 2020</view>
+                  <view>Năm 2021</view>
+                  <view>Năm 2022</view>
+                </picker-view-column>
+              </picker-view>
+            </view>
+
           </template>
           <view class="page-bottom-sheet">
             <view class="list-button">
@@ -51,62 +254,74 @@
             </bottom-sheet>
           </view>
         </label>
-  
-        <view class="list-item">
-          <view class="list-item-label">
-            <dropdown value="{{item1}}" items="{{items1}}" labelText="Giới tính" onSelect="onSelect1" />
-          </view>
+
+        <view class="gender">
+          <dropdown value="{{item1}}" items="{{items1}}" labelText="Giới tính" 
+          bottomSheetTitle="Giới tính"
+          onSelect="onSelectGender" />
         </view>
-  
+
         <label>
           <text class="header">Dân tộc</text>
-          <input name="input" placeholder="Dân tộc" />
+          <input name="ethnic" placeholder="Dân tộc" onInput="onInputEthnic"/>
         </label>
         <label>
           <text class="header">Quốc tịch</text>
-          <input name="input" placeholder="Quốc tịch" />
+          <input name="nation" placeholder="Quốc tịch" 
+          onInput="onInputNation" />
         </label>
         <label style="position: relative;">
           <text class="header">Nơi cư trú</text>
           <fi-button title="Nơi cư trú" left="15%">
             <view>
-              <text>Trường hợp công dân Việt Nam cư trú trong nước thì ghi theo nơi đăng ký thường trú, nếu không có nơi đăng ký thường trú thì ghi theo nơi đăng ký tạm trú.\nTrường hợp công dân Việt Nam cư trú ở nước ngoài thì ghi theo nơi thường trú hoặc tạm trú ở nước ngoài",</text>
+              <text>Trường hợp công dân Việt Nam cư trú trong nước thì ghi theo nơi đăng ký thường trú, nếu không có nơi
+                đăng ký thường trú thì ghi theo nơi đăng ký tạm trú.\nTrường hợp công dân Việt Nam cư trú ở nước ngoài
+                thì ghi theo nơi thường trú hoặc tạm trú ở nước ngoài",</text>
             </view>
           </fi-button>
-          <input name="input" placeholder="Số nhà, tên đường, xã, huyện, tỉnh" />
+          <input name="address2" placeholder="Số nhà, tên đường, xã, huyện, tỉnh" 
+          onInput="onInputAddress2"/>
         </label>
         <label style="position: relative;">
           <text class="header">Giấy tờ tùy thân</text>
           <fi-button title="Giấy tờ tùy thân" left="25%">
             <view>
-              <view>Ghi thông tin về giấy tờ tùy thân như: hộ chiếu, chứng minh nhân dân hoặc giấy tờ hợp lệ thay thế (ví dụ: Chứng minh nhân dân số 001089123 do Công an thành phố Hà Nội cấp ngày 20/10/2004)</view>
+              <view>Ghi thông tin về giấy tờ tùy thân như: hộ chiếu, chứng minh nhân dân hoặc giấy tờ hợp lệ thay thế
+                (ví dụ: Chứng minh nhân dân số 001089123 do Công an thành phố Hà Nội cấp ngày 20/10/2004)</view>
             </view>
           </fi-button>
-          <textarea show-count="{{false}}" name="input" placeholder="Ví dụ: Chứng minh nhân dân số 1212365055 do công an thành phố Hà Nội cấp ngày 11/08/2008" />
+          <textarea show-count="{{false}}" name="identity2"
+            placeholder="Ví dụ: Chứng minh nhân dân số 1212365055 do công an thành phố Hà Nội cấp ngày 11/08/2008" 
+            onInput="onInputIdentity2"/>
         </label>
         <label>
           <button class="button-full" onTap="onActionSheet">Tình trạng hôn nhân</button>
-          <textarea show-count="{{false}}" name="input" placeholder="Tình trạng hôn nhân" />
+          <textarea show-count="{{false}}" name="status" placeholder="Tình trạng hôn nhân" onInput="onInputStatus"/>
         </label>
         <label style="position: relative;">
           <text class="header">Mục đích sử dụng Giấy xác nhận tình trạng hôn nhân</text>
           <fi-button title="Giấy tờ tùy thân" left="92%">
             <view>
-              <view>Ghi rõ mục đích sử dụng Giấy xác nhận tình trạng hôn nhân. Trường hợp sử dụng Giấy xác nhận tình trạng hôn nhân để kết hôn, thì phải ghi rõ kết hôn với ai (họ, chữ đệm, tên; ngày, tháng, năm sinh; quốc tịch; giấy tờ tùy thân; nơi cư trú); nơi dự định đăng ký kết hôn</view>
+              <view>Ghi rõ mục đích sử dụng Giấy xác nhận tình trạng hôn nhân. Trường hợp sử dụng Giấy xác nhận tình
+                trạng hôn nhân để kết hôn, thì phải ghi rõ kết hôn với ai (họ, chữ đệm, tên; ngày, tháng, năm sinh; quốc
+                tịch; giấy tờ tùy thân; nơi cư trú); nơi dự định đăng ký kết hôn</view>
             </view>
           </fi-button>
-          <textarea show-count="{{false}}" name="input" placeholder="Mục đích sử dụng" />
+          <textarea show-count="{{false}}" name="input" placeholder="Mục đích sử dụng" 
+          onInput="onInputPurpose"/>
         </label>
       </view>
       <view class="block buttons">
         <button form-type="submit" style="
         border-bottom-left-radius: 4px;
-        border-top-left-radius: 4px;">Submit</button>
+        border-top-left-radius: 4px;"
+        onTap="onTapSubmit"
+        >Submit</button>
         <button form-type="reset" type="outline" style="
         border-bottom-right-radius: 4px;
         border-top-right-radius: 4px;">Reset</button>
       </view>
     </form>
   </scroll-view>
-  
+
 </view>

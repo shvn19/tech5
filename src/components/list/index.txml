@@ -9,7 +9,7 @@
       class="list-item {{index === items.length - 1 ? 'list-item-last' : ''}}"
     >
       <text class="list-item-text" style="color: {{ item.color }};">{{item.name}}</text>
-      <icon tiki:if="{{item.path}}" size="24" color="{{ item.color }}" type="arrow_right" />
+      <icon size="24" color="{{ item.color }}" type="arrow_right" />
     </view>
   </block>
 </view>

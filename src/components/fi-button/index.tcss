@@ -1,6 +1,6 @@
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 .info-icon{
   transform: translateX(16px)  translateY(1px);

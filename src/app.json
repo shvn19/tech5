@@ -1,14 +1,14 @@
 {
   "pages": [
+    "pages/home/index",
+    "pages/form/index",
     "pages/gxn/index",
     "pages/dkkh/index",
-    "pages/home/index",
     "pages/search/index",
-    "pages/detail1/index",
-    "pages/form/index"
+    "pages/detail-dkhn/index"
   ],
   "window": {
-    "defaultTitle": "",
+    "defaultTitle": "Tech5",
     "backgroundColor": "#fff",
     "titleBarColor": "#04a13b",
     "titleColor": "#fff"
