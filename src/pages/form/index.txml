@@ -1,0 +1,112 @@
+<view class="container" >
+  <scroll-view scroll-y="true" style="height:84vh;">
+    <form onSubmit="onSubmit" onReset="onReset">
+      <view class="block">
+        <label>
+          <text class="header">Thông tin người yêu cầu</text>
+          <input name="input" placeholder="Họ, chữ đệm, tên" />
+        </label>
+        <label style="position: relative;">
+          <text class="header">Nơi cư trú</text>
+          <fi-button title="Nơi cư trú" left="15%">
+            <view>
+              <text>Trường hợp công dân Việt Nam cư trú trong nước thì ghi theo nơi đăng ký thường trú, nếu không có nơi đăng ký thường trú thì ghi theo nơi đăng ký tạm trú.\nTrường hợp công dân Việt Nam cư trú ở nước ngoài thì ghi theo nơi thường trú hoặc tạm trú ở nước ngoài",</text>
+            </view>
+          </fi-button>
+          <button class="button-full" onTap="onAddress">Gợi ý</button>
+          <input name="input" placeholder="Số nhà, tên đường, xã, huyện, tỉnh" />
+        </label>
+        <label style="position: relative;">
+          <text class="header">Giấy tờ tùy thân</text>
+          <fi-button title="Giấy tờ tùy thân" left="25%">
+            <view>
+              <view>Ghi thông tin về giấy tờ tùy thân như: hộ chiếu, chứng minh nhân dân hoặc giấy tờ hợp lệ thay thế (ví dụ: Chứng minh nhân dân số 001089123 do Công an thành phố Hà Nội cấp ngày 20/10/2004)</view>
+            </view>
+          </fi-button>
+          <textarea show-count="{{false}}" name="input" placeholder="Ví dụ: Chứng minh nhân dân số 1212365055 do công an thành phố Hà Nội cấp ngày 11/08/2008" />
+        </label>
+        <label>
+          <text class="header">Quan hệ với người được cấp Giấy xác nhận tình trạng hôn nhân</text>
+          <input name="input" placeholder="Bổ ruột, Chồng, Con, Bố chồng" />
+        </label>
+      </view>
+      <view class="block">
+        <label>
+          <text class="header">Đề nghị cấp Giấy xác nhận tình trạng hôn nhân cho người có tên dưới đây</text>
+          <input name="input" placeholder="Họ, chữ đệm, tên" />
+        </label>
+
+        <!-- Nhập ngày tháng năm sinh -->
+        <label>
+          <template name="bottom-sheet-picker">
+            <picker-view class="bday"/>
+          </template>
+          <view class="page-bottom-sheet">
+            <view class="list-button">
+              <tu-button data-template="picker" onTap="onShowBottomSheet">Ngày, tháng, năm sinh</tu-button>
+            </view>
+            <bottom-sheet show="{{show}}" data-template="{{template}}" title="Ngày, tháng, năm sinh" buttonTitle="OK"
+              distanceFromTop="{{100}}" onClose="onCloseBottomSheet" onClick="onClickBottomSheet">
+              <template is="bottom-sheet-picker" />
+            </bottom-sheet>
+          </view>
+        </label>
+  
+        <view class="list-item">
+          <view class="list-item-label">
+            <dropdown value="{{item1}}" items="{{items1}}" labelText="Giới tính" onSelect="onSelect1" />
+          </view>
+        </view>
+  
+        <label>
+          <text class="header">Dân tộc</text>
+          <input name="input" placeholder="Dân tộc" />
+        </label>
+        <label>
+          <text class="header">Quốc tịch</text>
+          <input name="input" placeholder="Quốc tịch" />
+        </label>
+        <label style="position: relative;">
+          <text class="header">Nơi cư trú</text>
+          <fi-button title="Nơi cư trú" left="15%">
+            <view>
+              <text>Trường hợp công dân Việt Nam cư trú trong nước thì ghi theo nơi đăng ký thường trú, nếu không có nơi đăng ký thường trú thì ghi theo nơi đăng ký tạm trú.\nTrường hợp công dân Việt Nam cư trú ở nước ngoài thì ghi theo nơi thường trú hoặc tạm trú ở nước ngoài",</text>
+            </view>
+          </fi-button>
+          <input name="input" placeholder="Số nhà, tên đường, xã, huyện, tỉnh" />
+        </label>
+        <label style="position: relative;">
+          <text class="header">Giấy tờ tùy thân</text>
+          <fi-button title="Giấy tờ tùy thân" left="25%">
+            <view>
+              <view>Ghi thông tin về giấy tờ tùy thân như: hộ chiếu, chứng minh nhân dân hoặc giấy tờ hợp lệ thay thế (ví dụ: Chứng minh nhân dân số 001089123 do Công an thành phố Hà Nội cấp ngày 20/10/2004)</view>
+            </view>
+          </fi-button>
+          <textarea show-count="{{false}}" name="input" placeholder="Ví dụ: Chứng minh nhân dân số 1212365055 do công an thành phố Hà Nội cấp ngày 11/08/2008" />
+        </label>
+        <label>
+          <button class="button-full" onTap="onActionSheet">Tình trạng hôn nhân</button>
+          <textarea show-count="{{false}}" name="input" placeholder="Tình trạng hôn nhân" />
+        </label>
+        <label style="position: relative;">
+          <text class="header">Mục đích sử dụng Giấy xác nhận tình trạng hôn nhân</text>
+          <fi-button title="Giấy tờ tùy thân" left="92%">
+            <view>
+              <view>Ghi rõ mục đích sử dụng Giấy xác nhận tình trạng hôn nhân. Trường hợp sử dụng Giấy xác nhận tình trạng hôn nhân để kết hôn, thì phải ghi rõ kết hôn với ai (họ, chữ đệm, tên; ngày, tháng, năm sinh; quốc tịch; giấy tờ tùy thân; nơi cư trú); nơi dự định đăng ký kết hôn</view>
+            </view>
+          </fi-button>
+          <textarea show-count="{{false}}" name="input" placeholder="Mục đích sử dụng" />
+        </label>
+      </view>
+      <view class="block buttons">
+        <button form-type="submit" style="
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;">Submit</button>
+        <button form-type="reset" type="outline" style="
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;">Reset</button>
+      </view>
+    </form>
+  </scroll-view>
+  
+</view>
