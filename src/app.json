@@ -5,7 +5,7 @@
     "pages/dkkh/index",
     "pages/form/index",
     "pages/search/index",
-    "pages/detail1/index"
+    "pages/detail-dkhn/index"
     ],
   "window": {
     "defaultTitle": "Tech5",
