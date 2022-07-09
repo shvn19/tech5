@@ -10,9 +10,9 @@ Page({
       url: 'https://bb9f-42-115-65-149.ap.ngrok.io',
       method: 'GET',
       headers: {
-        "accept": "*/*",
         "Content-Type": "application/json"
       },
+      dataType: "json",
       success: (response) => {
         console.log(", response", response);
         this.setData({ response, loading: false });
