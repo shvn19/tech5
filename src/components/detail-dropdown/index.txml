@@ -1,0 +1,22 @@
+<view id="{{id}}" title="{{title}}" content="{{content}}" style="padding-left: 10px">
+  <view
+      onTap="handleOnTap"
+      data-id="{{id}}" 
+      class="list-item"
+    >
+      <text class="list-item-text" style="font-weight: 700;">{{title}}</text>
+      <icon size="24" color="black" type="arrow_right" style="transform: rotate({{ id ? 0 : 90}}deg);"/>
+    </view>
+    <view>
+      <block tiki:for="{{content}}">
+        <view tiki:if="{{typeof(item) === 'string'}}" style="padding-left: 10px">- {{item}} </view>
+        <block tiki:if="{{typeof(item) === 'object'}}">
+          <view style="padding-left: 10px;">- {{ item.subTitle }} </view>
+          <block tiki:for="{{item.subContent}}">
+            <view style="padding-left: 15px"> + {{ item }} </view>
+          </block>
+        </block>
+      </block>
+    </view>
+
+</view>

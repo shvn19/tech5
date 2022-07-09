@@ -1,4 +1,7 @@
-<tu-button onTap="onTap" iconName="info" shape="borderless" type="ghost" size="small" style="position: absolute; top: {{top}}; left: {{left}}; width: 40px;" />
+<!-- <tu-button onTap="onTap" iconName="info" shape="borderless" type="ghost" size="small" style="position: absolute; top: {{top}}; left: {{left}}; width: 40px;" /> -->
+<view onTap="onTap" style="position: absolute; top: {{top}}; left: {{left}};" class="info-icon">
+  <icon type="info" color="blue" size="18" />
+</view>
 <bottom-sheet buttonTitle="OK" title="{{title}}" show="{{showBottomSheet}}" onClose="onClose" mask="true"
   buttonCls="hidden">
 <slot name="header" />  

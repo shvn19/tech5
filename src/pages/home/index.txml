@@ -20,4 +20,16 @@
 
   <list header="Phổ biến nhất" items="{{ populars }}" />
 
+  <navigator open-type="navigate" url="pages/detail1/index">
+    detail
+  </navigator>
+  <navigator open-type="navigate" url="pages/gxn/index">
+    gxn
+  </navigator>
+  <navigator open-type="navigate" url="pages/form/index">
+    form
+  </navigator>
+  <navigator open-type="navigate" url="pages/dkkh/index">
+    dkkh
+  </navigator>
 </view>

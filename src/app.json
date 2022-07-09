@@ -1,10 +1,12 @@
 {
   "pages": [
     "pages/home/index",
+    "pages/gxn/index",
+    "pages/dkkh/index",
     "pages/form/index",
     "pages/search/index",
-    "pages/dkkh/index"
-  ],
+    "pages/detail1/index"
+    ],
   "window": {
     "defaultTitle": "",
     "backgroundColor": "#fff",
