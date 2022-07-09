@@ -43,3 +43,8 @@
 .hidden {
   display: none;
 }
+
+.end-page-block {
+  position: absolute;
+  bottom: 0;
+}
