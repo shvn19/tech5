@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/search/index"
+  ],
+  "window": {
+    "defaultTitle": "",
+    "backgroundColor": "#fff",
+    "titleBarColor": "#04a13b",
+    "titleColor": "#fff"
+  }
+}

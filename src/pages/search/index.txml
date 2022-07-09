@@ -1,0 +1,22 @@
+<view class="sticky p-medium" style="margin-top: 20px">
+  <textfield 
+    focus 
+    placeholder="Tên quy trình hành chính"
+    onInput="onInput" 
+    onFocus="onFocus"
+    onBlur="onBlur"
+    onConfirm="onConfirm"
+    shape="pill" 
+    iconLeft="search" />
+  <view class="divider mb-small" />
+</view>
+
+<view class="list-container" tiki:if="{{procedures.length}}">
+  <list header="Kết quả tìm kiếm" items="{{procedures}}" />
+</view>
+
+<view style="display: flex; align-items: center; justify-content: center; flex-direction: column;" 
+class="mt-medium flex flex-col items-center justify-center" tiki:if="{{notFound}}">
+  <image class="not-found" src="../../assets/images/notfound.png" />
+  <text class="mt-medium">Not found!</text>
+</view>

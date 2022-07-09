@@ -1,0 +1,41 @@
+.home-header {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: calc(100vw * 120 / 360);
+  background-size: cover;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.navigation-bar {
+  z-index: 2;
+  transition: ease-in-out 0.1s;
+}
+
+.white-navigation-bar {
+  background: var(--white);
+  border-bottom: 1px solid #ebebf0;
+}
+
+.w-full {
+  width: 100%;
+  max-width: var(--maxWidth);
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-150 {
+  max-height: 150px;
+  height: 150px;
+}
+
+.h-200 {
+  max-height: 200px;
+  height: 200px;
+}

@@ -1,0 +1,8 @@
+<view class="mt-20px">
+  <view class="d-flex">
+    <text class="w--a h-25px">Bạn là cư dân việt nam phải không</text>
+    <button size="small" shape="pill" type="outline" style="border-radius: 10px;">phải</button>
+    <view style="margin-left: 15px" />
+    <button size="small" shape="circle" type="solid" style="border-radius: 10px;">không</button>
+  </view>
+</view>

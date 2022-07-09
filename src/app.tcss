@@ -1,0 +1,26 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: #f7f7f7;
+}
+
+.mt-20px {
+  margin-top: 20px
+}
+
+.d-flex{
+  display: flex;
+}
+
+.w--a{
+  width: 60%;
+}
+
+.h-25px{
+  height: 25px;
+  max-height: 25px;
+}

@@ -1,0 +1,33 @@
+<view class="mt-20px" style="justify-items: center; justify-content: center;">
+  <!-- <block  tiki:for="{{questions}}">
+    <view class="d-flex" style="margin-left: 10px">
+      <text class="w--a" style="margin: auto 0px; font-size: 14px;">{{item.question}}</text>
+      <button data-id="{{item.id}}" size="small" shape="pill" type="{{qs1 === false ? 'solid' : 'outline'}}" style="border-radius: 10px;" onTap="onTapYes">{{item.labelYes}}</button>
+      <view style="margin-left: 15px" />
+      <button data-id="{{item.id}}" size="small" shape="circle" type="s{{qs1 === false ? 'solid' : 'outline'}}" style="border-radius: 10px;" onTap="onTapNo">{{item.labelNo}}</button>
+    </view>
+  </block> -->
+
+  <view class="d-flex" style="margin-left: 10px">
+    <text class="w--a" style="margin: auto 0px; font-size: 14px;">Bạn kết hôn lần đầu phải không?</text>
+    <button size="small" shape="pill" type="{{isvn === true ? 'solid' : 'outline'}}" style="border-radius: 10px;"
+      onTap="onTapYes">phải</button>
+    <view style="margin-left: 15px" />
+    <button size="small" shape="circle" type="{{isvn === true ? 'outline' : 'solid'}}" style="border-radius: 10px;"
+      onTap="onTapNo">không</button>
+  </view>
+  <view style="margin-left: 10px">
+    <text class="w--a" style="margin: auto 0px; font-size: 14px;">Bạn kết hôn lần đầu phải không?</text>
+    <!-- <dropdown maskClose="{{false}}" bottomSheetHeight="300" items="{{items1}}" value="{{selected1}}"
+      onSelect="onSelect1" placeholder="Chọn 1">
+    </dropdown> -->
+    <radio-group class="radio-group" onChange="onChange">
+      <view class="radio" tiki:for="{{items}}" key="radio-{{index}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />
+        <text class="text">{{item.value}}</text>
+      </view>
+    </radio-group>
+  </view>
+
+
+</view>

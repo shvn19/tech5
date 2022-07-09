@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "dropdown": "@tiki.vn/tini-ui/es/dropdown/index"
+  }
+}
